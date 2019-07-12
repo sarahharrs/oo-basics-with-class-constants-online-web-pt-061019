@@ -15,7 +15,7 @@ BRANDS = [ ]
 
 def brand = (brand)
   @brand = brand 
-  BRANDS << brand 
+  BRANDS << brand unless BRANDS.include?(brand)
 end 
 end
 shoe.new.brand= "Nike"
